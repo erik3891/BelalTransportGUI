@@ -25,5 +25,11 @@ namespace BelalTransportGUI
             InitializeComponent();
         }
 
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            Medarbejder medarbejder = new Medarbejder();
+            medarbejder.Show();
+            this.Close();
+        }
     }
 }
