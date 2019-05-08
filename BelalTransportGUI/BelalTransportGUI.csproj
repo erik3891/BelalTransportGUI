@@ -55,6 +55,19 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Indtægter.xaml.cs">
+      <DependentUpon>Indtægter.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Resultat.xaml.cs">
+      <DependentUpon>Resultat.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Udgifter.xaml.cs">
+      <DependentUpon>Udgifter.xaml</DependentUpon>
+    </Compile>
+    <Page Include="Indtægter.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Lønseddel.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -75,6 +88,14 @@
       <SubType>Code</SubType>
     </Compile>
     <Page Include="Medarbejder.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Resultat.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Udgifter.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
