@@ -19,8 +19,8 @@ namespace BelalTransportGUI
     /// </summary>
     public partial class Udgifter : Window
     {
-        Udgift
-    {
+        
+    
         public List<double> liste = new List<double>();
         //liste.Add();
         public List<string> UdgiftFelt = new List<string>();
@@ -70,9 +70,36 @@ namespace BelalTransportGUI
                         {
                             Console.WriteLine("Virker ikke");
                         }
-                        public Udgifter()
+                        
+                        
+                           
+                        
+                    }
+                }
+
+            }
+        }
+
+        private void ListBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            InitializeComponent();
+
+        }
+        
+        private void TextBox_TextChanged(object sender, TextChangedEventArgs e, Int32)
+        {
+            int Udgift = 0;
+            sender = Udgift;
+            if (sender == e)
+            {
+
+            }
+            
+            
+        }
+
+        private void TextBox_KeyDown(object sender, KeyEventArgs e)
+        {
+
         }
     }
 }
