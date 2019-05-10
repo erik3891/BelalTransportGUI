@@ -55,6 +55,8 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="ConnectionDB.cs" />
+    <Compile Include="Controller.cs" />
     <Compile Include="Indtægter.xaml.cs">
       <DependentUpon>Indtægter.xaml</DependentUpon>
     </Compile>
