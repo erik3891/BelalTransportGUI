@@ -30,13 +30,16 @@ namespace BelalTransportGUI
             Medarbejder medarbejder = new Medarbejder();
             medarbejder.Show();
             this.Close();
+
         }
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
+
             Udgifter udgifter = new Udgifter();
             udgifter.Show();
             this.Close();
         }
+
     }
 }

@@ -29,4 +29,18 @@ namespace BelalTransportGUI
             InitializeComponent();
         }
     }
-}
+
+        private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            var Udgiftdata = new Udgifter();
+            var data = Udgiftdata.UdgiftSum; // Ska ind og have fat i udgift summen
+
+            
+        }
+
+        private void TextBox_TextChanged_1(object sender, TextChangedEventArgs e)
+        {
+            var indtægtdata = new Indtægter();
+            var data = indtægtdata.indtægtSum;
+        }
+    }
