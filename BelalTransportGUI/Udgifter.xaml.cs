@@ -31,9 +31,12 @@ namespace BelalTransportGUI
             
             den.Text = summen.ToString();// henter l´tekstbox og putter summen ind i det
 
-           /* Udgifter udgift = new Udgifter(nummer1.Text + nummer2.Text);
-            udgift.Show();*/
-        }
+            public List<TextBox> udgiftsliste = new List<TextBox>();
+        
+
+        /* Udgifter udgift = new Udgifter(nummer1.Text + nummer2.Text);
+         udgift.Show();*/
+    }
 
         private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
         {
