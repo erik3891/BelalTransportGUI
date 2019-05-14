@@ -24,6 +24,22 @@ namespace BelalTransportGUI
             InitializeComponent();
         }
 
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            int summen = 0;// opretter vores udregning hvor den ska gemmes
+          summen = int.Parse(nummer1.Text) + int.Parse(nummer2.Text); // starter udregning med at pluse tekstbox med hinanden 
+            
+            den.Text = summen.ToString();// henter l´tekstbox og putter summen ind i det
+
+           /* Udgifter udgift = new Udgifter(nummer1.Text + nummer2.Text);
+            udgift.Show();*/
+        }
+
+        private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
+
         /* public List<double> liste = new List<double>();
          //liste.Add();
          public List<string> UdgiftFelt = new List<string>();
