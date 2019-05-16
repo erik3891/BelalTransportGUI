@@ -34,24 +34,28 @@ namespace BelalTransportGUI
         }
            private void Button_Click_1(object sender, RoutedEventArgs e)
         {
-                List<TextBox> udgiftsliste = new List<TextBox>();
+
+            List<TextBox> udgiftsliste = new List<TextBox>();
+           
+            
 
             udgiftsliste.Add(nummer1);
             udgiftsliste.Add(nummer2);
 
-            TextBox data = new TextBox();
-            Te
+          
 
+            gemt.Text = udgiftsliste.ToString();
+               
         }
-                
-  
-            
-            
 
-
-            /* Udgifter udgift = new Udgifter(nummer1.Text + nummer2.Text);
-             udgift.Show();*/
         
+
+
+
+
+        /* Udgifter udgift = new Udgifter(nummer1.Text + nummer2.Text);
+         udgift.Show();*/
+
 
         private void Nummer1_KeyDown(object sender, KeyEventArgs e)
         {

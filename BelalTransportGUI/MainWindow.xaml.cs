@@ -41,5 +41,13 @@ namespace BelalTransportGUI
             this.Close();
         }
 
+      
+
+        private void Indtægter_Click(object sender, RoutedEventArgs e)
+        {
+            Indtægter indtægter = new Indtægter();
+            indtægter.Show();
+            this.Close();
+        }
     }
 }
