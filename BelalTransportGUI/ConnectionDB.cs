@@ -20,39 +20,40 @@ namespace BelalTransportGUI
         {
             using (SqlConnection con = new SqlConnection(connectionString))
             {
-            string query = "SELECT * Belal_tab_Medarbejeder";
-            using (SqlCommand command = new SqlCommand(query, con))
+                string query = "SELECT * Belal_tab_Medarbejeder";
+                using (SqlCommand command = new SqlCommand(query, con))
                 {
                     try
-                        {
+                    {
                         con.Open();
                         SqlDataReader reader = command.ExecuteReader();
 
-                if (reader.HasRows)
-                {
-                    while (reader.Read())
+                        if (reader.HasRows)
+                        {
+                            while (reader.Read())
+                            {
+                                int PetID = int.Parse(reader["PetID"].ToString());
+                                string PetName = reader["PetName"].ToString();
+                                string PetType = reader["PetType"].ToString();
+                                string PetBreed = reader["PetBreed"].ToString();
+                                string PetDOBl = reader["PetDOBl"].ToString();
+                                string petWeight = reader["petWeight"].ToString();
+                                int OwnerID = int.Parse(reader["OwnerID"].ToString());
+                                Console.WriteLine(PetID + ", " + PetName + ", " + PetType + ", " + PetBreed + ", " + PetDOBl + ", " + petWeight + ", " + OwnerID);
+                            }
+                        }
+
+                        con.Close();
+
+                        Console.ReadLine();
+                    }
+                    catch (Exception e)
                     {
-                        int PetID = int.Parse(reader["PetID"].ToString());
-                        string PetName = reader["PetName"].ToString();
-                        string PetType = reader["PetType"].ToString();
-                        string PetBreed = reader["PetBreed"].ToString();
-                        string PetDOBl = reader["PetDOBl"].ToString();
-                        string petWeight = reader["petWeight"].ToString();
-                        int OwnerID = int.Parse(reader["OwnerID"].ToString());
-                        Console.WriteLine(PetID + ", " + PetName + ", " + PetType + ", " + PetBreed + ", " + PetDOBl + ", " + petWeight + ", " + OwnerID);
+                        Console.WriteLine(e.Message);
+                        Console.ReadLine();
                     }
                 }
-
-                con.Close();
-
-                Console.ReadLine();
-            }
-            catch (Exception e)
-            {
-                Console.WriteLine(e.Message);
-                Console.ReadLine();
             }
         }
     }
-}
 }

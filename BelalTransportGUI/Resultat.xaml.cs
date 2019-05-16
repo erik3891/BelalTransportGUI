@@ -24,23 +24,24 @@ namespace BelalTransportGUI
             int indtægtSum = indtægtList.Sum();
             int udgiftSum = udgiftsListe.Sum();
             return indtægtSum - udgiftSum;
-            public Resultat()
-        {
-            InitializeComponent();
+           // public Resultat()
+            {
+                InitializeComponent();
+            }
         }
-    }
 
         private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
         {
             var Udgiftdata = new Udgifter();
-            var data = Udgiftdata.UdgiftSum; // Ska ind og have fat i udgift summen
+          //  var data = Udgiftdata.UdgiftSum; // Ska ind og have fat i udgift summen
 
-            
+
         }
 
         private void TextBox_TextChanged_1(object sender, TextChangedEventArgs e)
         {
             var indtægtdata = new Indtægter();
-            var data = indtægtdata.indtægtSum;
+            //var data = indtægtdata.indtægtSum;
         }
     }
+}
