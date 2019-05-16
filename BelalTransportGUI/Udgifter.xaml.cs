@@ -24,19 +24,25 @@ namespace BelalTransportGUI
             InitializeComponent();
         }
 
-        protected void Button_Click(object sender, RoutedEventArgs e)
+        private void Button_Click(object sender, RoutedEventArgs e)
         {
             int summen = 0;// opretter vores udregning hvor den ska gemmes
             summen = int.Parse(nummer1.Text) + int.Parse(nummer2.Text); // starter udregning med at pluse tekstbox med hinanden 
 
             den.Text = summen.ToString();// henter "den" tekstbox og putter summen ind i det
 
-            List<TextBox> udgiftsliste = new List<TextBox>();
+        }
+           private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+                List<TextBox> udgiftsliste = new List<TextBox>();
 
             udgiftsliste.Add(nummer1);
             udgiftsliste.Add(nummer2);
-            
-           
+
+            TextBox data = new TextBox();
+            Te
+
+        }
                 
   
             
@@ -45,7 +51,7 @@ namespace BelalTransportGUI
 
             /* Udgifter udgift = new Udgifter(nummer1.Text + nummer2.Text);
              udgift.Show();*/
-        }
+        
 
         private void Nummer1_KeyDown(object sender, KeyEventArgs e)
         {
@@ -78,6 +84,41 @@ namespace BelalTransportGUI
             }
 
         }
+
+        private void Nummer2_KeyDown(object sender, KeyEventArgs e)
+        {
+            switch (e.Key)
+            {
+                case Key.NumPad0:
+                case Key.NumPad1:
+                case Key.NumPad2:
+                case Key.NumPad3:
+                case Key.NumPad4:
+                case Key.NumPad5:
+                case Key.NumPad6:
+                case Key.NumPad7:
+                case Key.NumPad8:
+                case Key.NumPad9:
+                case Key.D0:
+                case Key.D1:
+                case Key.D2:
+                case Key.D3:
+                case Key.D4:
+                case Key.D5:
+                case Key.D6:
+                case Key.D7:
+                case Key.D8:
+                case Key.D9:
+                    break;
+                default:
+                    e.Handled = true;
+                    break;
+            }
+        }
+
+        
+
+
 
         //private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
         //{
