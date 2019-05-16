@@ -61,6 +61,14 @@ namespace BelalTransportGUI
             summen = int.Parse(indtægter1.Text) + int.Parse(indtægter2.Text); // starter udregning med at pluse tekstbox med hinanden 
 
             sum.Text = summen.ToString();
+
+
+
+
+
+
+
+  
         }
     }
 }

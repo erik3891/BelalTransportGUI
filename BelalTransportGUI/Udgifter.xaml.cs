@@ -34,6 +34,14 @@ namespace BelalTransportGUI
         }
            private void Button_Click_1(object sender, RoutedEventArgs e)
         {
+            if (gemt != nummer1 || gemt != nummer2)
+            {
+                Console.WriteLine("Fail");
+            }
+            else
+            {
+                Console.WriteLine("Dataen er gemt")
+            }// HUSK ska have lavt en gemt der ska hente data fra liste om tingene er gemt. husk det 
 
             List<TextBox> udgiftsliste = new List<TextBox>();
            
