@@ -57,6 +57,7 @@
     </ApplicationDefinition>
     <Compile Include="ConnectionDB.cs" />
     <Compile Include="Controller.cs" />
+    <Compile Include="Employee.cs" />
     <Compile Include="Indtægter.xaml.cs">
       <DependentUpon>Indtægter.xaml</DependentUpon>
     </Compile>
@@ -89,7 +90,7 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Page Include="Medarbejder.xaml">
+    <Page Include="EmployeeWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -103,8 +104,8 @@
     </Page>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Medarbejder.xaml.cs">
-      <DependentUpon>Medarbejder.xaml</DependentUpon>
+    <Compile Include="EmployeeWindow.xaml.cs">
+      <DependentUpon>EmployeeWindow.xaml</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>

@@ -8,17 +8,17 @@ using System.Data;
 
 namespace BelalTransportGUI
 {
-    class ConnectionDB
+    public class MedarbejderDB
     {
-        private List<Employee> medarbejders = new List<Employee>();
-        public void AddEmployee(Employee medarbejder)
+        private List<Medarbejeder> medarbejders = new List<Medarbejeder>();
+        public void AddMedarbejder(Medarbejeder medarbejder)
         {
             medarbejders.Add(medarbejder);
 
         }
-        public Employee GetEmployee(string CPR)
+        public Medarbejeder GetMedarbejder(string CPR)
         {
-            return medarbejders;
+            return medarbejders
         }
 
         private static string connectionString =
@@ -27,7 +27,7 @@ namespace BelalTransportGUI
         "User ID = C_STUDENT06;" +
         "Password = C_OPENDB06;";
 
-        public void ShowEmployee()
+        public void VisMedarbejder()
         {
             using (SqlConnection con = new SqlConnection(connectionString))
             {
@@ -47,15 +47,13 @@ namespace BelalTransportGUI
                                 string MedarbejderFornavn = reader["Førstnavn"].ToString();
                                 string MedarbejderEfternavn = reader["Efternavn"].ToString();
 
-                                Employee medarbejeder = new Employee(CPR, MedarbejderFornavn, MedarbejderEfternavn);
-
-                                AddEmployee(medarbejeder);
+                                Medarbejeder medarbejeder = new Medarbejeder(CPR,MedarbejderFornavn,MedarbejderEfternavn);
+                                
+                                AddMedarbejder(medarbejeder);
                             }
                         }
 
                         con.Close();
-
-                        Console.ReadLine();
                     }
                     catch (Exception e)
                     {

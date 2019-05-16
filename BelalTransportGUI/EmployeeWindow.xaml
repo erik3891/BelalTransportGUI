@@ -1,0 +1,18 @@
+﻿<Window x:Class="BelalTransportGUI.EmployeeWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BelalTransportGUI"
+        mc:Ignorable="d"
+        Title="Medarbejder" Height="450" Width="800">
+    <Grid>
+        <ListBox HorizontalAlignment="Left" Height="150" Margin="43,59,0,0" VerticalAlignment="Top" Width="135" SelectionChanged="ListBox_SelectionChanged"/>
+        <Label Content="Medarbejder" HorizontalAlignment="Left" Margin="47,34,0,0" VerticalAlignment="Top" Width="84" Height="24"/>
+        <Label Content="Lønseddel" HorizontalAlignment="Left" Margin="274,35,0,0" VerticalAlignment="Top"/>
+        <ListBox HorizontalAlignment="Left" Height="146" Margin="225,60,0,0" VerticalAlignment="Top" Width="165" RenderTransformOrigin="0.667,0.486"/>
+        <Button Content="Rediger" HorizontalAlignment="Left" Margin="227,216,0,0" VerticalAlignment="Top" Width="75"/>
+        <Button Content="Ny" HorizontalAlignment="Left" Margin="317,216,0,0" VerticalAlignment="Top" Width="75" RenderTransformOrigin="0.013,0.05"/>
+
+    </Grid>
+</Window>
