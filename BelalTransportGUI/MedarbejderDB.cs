@@ -8,17 +8,17 @@ using System.Data;
 
 namespace BelalTransportGUI
 {
-    class ConnectionDB
+    public class MedarbejderDB
     {
-        private List<Employee> employees = new List<Employee>();
-        public void AddEmployee(Employee employee)
+        private List<Medarbejeder> medarbejders = new List<Medarbejeder>();
+        public void AddMedarbejder(Medarbejeder medarbejder)
         {
-            employees.Add(employee);
+            medarbejders.Add(medarbejder);
 
         }
-        public Employee GetEmployee(string CPR)
+        public Medarbejeder GetMedarbejder(string CPR)
         {
-            return employees;
+            return medarbejders
         }
 
         private static string connectionString =
@@ -27,7 +27,7 @@ namespace BelalTransportGUI
         "User ID = C_STUDENT06;" +
         "Password = C_OPENDB06;";
 
-        public void ShowEmployee()
+        public void VisMedarbejder()
         {
             using (SqlConnection con = new SqlConnection(connectionString))
             {
@@ -44,18 +44,16 @@ namespace BelalTransportGUI
                             while (reader.Read())
                             {
                                 string CPR = reader["CPR"].ToString();
-                                string EmployeeFirstname = reader["Førstnavn"].ToString();
-                                string EmployeeLastName = reader["Efternavn"].ToString();
+                                string MedarbejderFornavn = reader["Førstnavn"].ToString();
+                                string MedarbejderEfternavn = reader["Efternavn"].ToString();
 
-                                Employee employee = new Employee(CPR, EmployeeFirstname, EmployeeLastName);
-
-                                AddEmployee(employee);
+                                Medarbejeder medarbejeder = new Medarbejeder(CPR,MedarbejderFornavn,MedarbejderEfternavn);
+                                
+                                AddMedarbejder(medarbejeder);
                             }
                         }
 
                         con.Close();
-
-                        Console.ReadLine();
                     }
                     catch (Exception e)
                     {

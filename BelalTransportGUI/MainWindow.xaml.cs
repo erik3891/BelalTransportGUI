@@ -27,8 +27,8 @@ namespace BelalTransportGUI
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            Medarbejder medarbejder = new Medarbejder();
-            medarbejder.Show();
+            EmployeeWindow employee = new EmployeeWindow();
+            employee.Show();
             this.Close();
 
         }
