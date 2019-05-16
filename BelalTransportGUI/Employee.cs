@@ -8,15 +8,15 @@ namespace BelalTransportGUI
 {
     class Employee
     {
-        public Employee(string cpr, string medarbejderfornavn, string medarbejderefternavn)
+        public Employee(string cpr, string employeefirstname, string employeelastname)
         {
                 CPR = cpr;
-                MedarbejderFornavn = medarbejderfornavn;
-                MedarbejderEfternavn = medarbejderefternavn;
+                EmployeeFirstName = employeefirstname;
+                EmployeeLastName = employeelastname;
         }
 
             public string CPR { get; set; }
-            public string MedarbejderFornavn { get; set; }
-            public string MedarbejderEfternavn { get; set; }
+            public string EmployeeFirstName { get; set; }
+            public string EmployeeLastName { get; set; }
     }
 }

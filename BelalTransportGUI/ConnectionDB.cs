@@ -10,15 +10,15 @@ namespace BelalTransportGUI
 {
     class ConnectionDB
     {
-        private List<Employee> medarbejders = new List<Employee>();
-        public void AddEmployee(Employee medarbejder)
+        private List<Employee> employees = new List<Employee>();
+        public void AddEmployee(Employee employee)
         {
-            medarbejders.Add(medarbejder);
+            employees.Add(employee);
 
         }
         public Employee GetEmployee(string CPR)
         {
-            return medarbejders;
+            return employees;
         }
 
         private static string connectionString =
@@ -44,12 +44,12 @@ namespace BelalTransportGUI
                             while (reader.Read())
                             {
                                 string CPR = reader["CPR"].ToString();
-                                string MedarbejderFornavn = reader["Førstnavn"].ToString();
-                                string MedarbejderEfternavn = reader["Efternavn"].ToString();
+                                string EmployeeFirstname = reader["Førstnavn"].ToString();
+                                string EmployeeLastName = reader["Efternavn"].ToString();
 
-                                Employee medarbejeder = new Employee(CPR, MedarbejderFornavn, MedarbejderEfternavn);
+                                Employee employee = new Employee(CPR, EmployeeFirstname, EmployeeLastName);
 
-                                AddEmployee(medarbejeder);
+                                AddEmployee(employee);
                             }
                         }
 
