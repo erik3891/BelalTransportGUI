@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         Title="Medarbejder" Height="450" Width="800">
     <Grid>
-        <ListBox HorizontalAlignment="Left" Height="150" Margin="43,59,0,0" VerticalAlignment="Top" Width="135" SelectionChanged="ListBox_SelectionChanged"/>
+        <ListBox x:Name="medarbejderlist" HorizontalAlignment="Left" Height="150" Margin="43,59,0,0" VerticalAlignment="Top" Width="135" SelectionChanged="ListBox_SelectionChanged"/>
         <Label Content="Medarbejder" HorizontalAlignment="Left" Margin="47,34,0,0" VerticalAlignment="Top" Width="84" Height="24"/>
         <Label Content="Lønseddel" HorizontalAlignment="Left" Margin="274,35,0,0" VerticalAlignment="Top"/>
         <ListBox HorizontalAlignment="Left" Height="146" Margin="225,60,0,0" VerticalAlignment="Top" Width="165" RenderTransformOrigin="0.667,0.486"/>

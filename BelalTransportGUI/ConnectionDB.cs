@@ -8,17 +8,24 @@ using System.Data;
 
 namespace BelalTransportGUI
 {
-    class ConnectionDB
+    public class ConnectionDB
     {
-        private List<Employee> employees = new List<Employee>();
+        private static List<Employee> employees = new List<Employee>();
         public void AddEmployee(Employee employee)
         {
             employees.Add(employee);
 
         }
-        public Employee GetEmployee(string CPR)
+        public static Employee GetEmployee(string cpr)
         {
-            return employees;
+            for (int i = 0; i < employees.Count; i++)
+            {
+                if (employees[i].CPR == cpr)
+                {
+                    return employees[i];
+                }
+            }
+            return null;
         }
 
         private static string connectionString =

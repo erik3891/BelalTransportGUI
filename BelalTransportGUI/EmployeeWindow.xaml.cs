@@ -27,6 +27,7 @@ namespace BelalTransportGUI
         private void ListBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
 
+            medarbejderlist.Items.Add(new ListBoxItem { Content = ConnectionDB.GetEmployee});
         }
     }
 }

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace BelalTransportGUI
 {
-    class Employee
+    public class Employee
     {
         public Employee(string cpr, string employeefirstname, string employeelastname)
         {

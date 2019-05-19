@@ -19,15 +19,15 @@ namespace BelalTransportGUI
     /// </summary>
     public partial class Resultat : Window
     {
+        public Resultat()
+        {
+            InitializeComponent();
+        }
         public int Lommeregner(List<int> indtægtList, List<int> udgiftsListe)
         {
             int indtægtSum = indtægtList.Sum();
             int udgiftSum = udgiftsListe.Sum();
             return indtægtSum - udgiftSum;
-           // public Resultat()
-            {
-                InitializeComponent();
-            }
         }
 
         private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
