@@ -40,7 +40,7 @@ namespace BelalTransportGUI
             }
             else
             {
-                Console.WriteLine("Dataen er gemt")
+                Console.WriteLine("Dataen er gemt");
             }// HUSK ska have lavt en gemt der ska hente data fra liste om tingene er gemt. husk det 
 
             List<TextBox> udgiftsliste = new List<TextBox>();

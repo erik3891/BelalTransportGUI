@@ -38,7 +38,7 @@ namespace BelalTransportGUI
         {
             using (SqlConnection con = new SqlConnection(connectionString))
             {
-                string query = "SELECT * Belal_tab_Medarbejeder";
+                string query = "SELECT * Belal_tab_Worker";
                 using (SqlCommand command = new SqlCommand(query, con))
                 {
                     try
@@ -51,8 +51,8 @@ namespace BelalTransportGUI
                             while (reader.Read())
                             {
                                 string CPR = reader["CPR"].ToString();
-                                string EmployeeFirstname = reader["Førstnavn"].ToString();
-                                string EmployeeLastName = reader["Efternavn"].ToString();
+                                string EmployeeFirstname = reader["Firstname"].ToString();
+                                string EmployeeLastName = reader["Lastname"].ToString();
 
                                 Employee employee = new Employee(CPR, EmployeeFirstname, EmployeeLastName);
 
