@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -19,15 +20,19 @@ namespace BelalTransportGUI
     /// </summary>
     public partial class EmployeeWindow : Window
     {
+
         public EmployeeWindow()
         {
             InitializeComponent();
         }
 
-        private void ListBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        private void ListBox_SelectionChanged(object sender, RoutedEventArgs e)
         {
-
-            medarbejderlist.Items.Add(new ListBoxItem { Content = ConnectionDB.GetEmployee});
+            //medarbejderlist.DataSource = MyList;
+            //for (int i = 0; i < ConnectionDB.employees.Count; i++)
+            //{
+            //    medarbejderlist.Items.Add(ConnectionDB.employees.ElementAt(i));
+            //}
         }
     }
 }

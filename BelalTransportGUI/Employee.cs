@@ -8,15 +8,19 @@ namespace BelalTransportGUI
 {
     public class Employee
     {
-        public Employee(string cpr, string employeefirstname, string employeelastname)
+        public Employee(string fullemployee)
         {
-                CPR = cpr;
-                EmployeeFirstName = employeefirstname;
-                EmployeeLastName = employeelastname;
+                FullEmployee = fullemployee;
         }
+            
+        public string FullEmployee { get; set; }
+        //    public string CPR { get; set; }
+        //    public string EmployeeFirstName { get; set; }
+        //    public string EmployeeLastName { get; set; }
 
-            public string CPR { get; set; }
-            public string EmployeeFirstName { get; set; }
-            public string EmployeeLastName { get; set; }
+        //public override string ToString()
+        //{
+        //    return CPR + EmployeeFirstName + EmployeeLastName;
+        //}
     }
 }
