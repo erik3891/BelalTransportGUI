@@ -34,7 +34,8 @@ namespace BelalTransportGUI
         "User ID = C_STUDENT06;" +
         "Password = C_OPENDB06;";
 
-        public void ShowEmployee()
+        
+        public void GetAllEmployees()
         {
             using (SqlConnection con = new SqlConnection(connectionString))
             {
