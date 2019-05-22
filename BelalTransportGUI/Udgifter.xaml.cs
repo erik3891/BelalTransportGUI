@@ -23,7 +23,7 @@ namespace BelalTransportGUI
         {
             InitializeComponent();
         }
-
+        
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             int summen = 0;// opretter vores udregning hvor den ska gemmes
@@ -137,6 +137,11 @@ namespace BelalTransportGUI
             MainWindow mainWindow = new MainWindow();
             mainWindow.Show();
             this.Hide();
+        }
+
+        private void Den_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            
         }
 
 
