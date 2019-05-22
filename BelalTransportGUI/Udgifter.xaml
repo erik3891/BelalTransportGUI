@@ -13,6 +13,7 @@
         <TextBox x:Name="nummer2" HorizontalAlignment="Left" Height="23" Margin="313,67,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" KeyDown="Nummer2_KeyDown" />
         <Button Content="Gem" HorizontalAlignment="Left" Margin="438,317,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click_1"/>
         <TextBox x:Name="gemt" HorizontalAlignment="Left" Height="23" Margin="542,318,0,0" TextWrapping="Wrap" Text="gemt" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="Tilbage" Content="Tilbage" HorizontalAlignment="Left" Margin="15,14,0,0" VerticalAlignment="Top" Width="75" Click="Tilbage_Click" />
 
     </Grid>
 </Window>

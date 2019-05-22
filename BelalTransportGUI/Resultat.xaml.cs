@@ -23,12 +23,8 @@ namespace BelalTransportGUI
         {
             InitializeComponent();
         }
-        public int Lommeregner(List<int> indtægtList, List<int> udgiftsListe)
-        {
-            int indtægtSum = indtægtList.Sum();
-            int udgiftSum = udgiftsListe.Sum();
-            return indtægtSum - udgiftSum;
-        }
+        
+       
 
         private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
         {
@@ -43,5 +39,84 @@ namespace BelalTransportGUI
             var indtægtdata = new Indtægter();
             //var data = indtægtdata.indtægtSum;
         }
+
+        private void Tilbage_Click(object sender, RoutedEventArgs e)
+        {
+            MainWindow mainWindow = new MainWindow();
+            mainWindow.Show();
+            this.Hide();
+        }
+
+        private void IndtægtSum_KeyDown(object sender, KeyEventArgs e)
+        {
+            switch (e.Key)
+            {
+                case Key.NumPad0:
+                case Key.NumPad1:
+                case Key.NumPad2:
+                case Key.NumPad3:
+                case Key.NumPad4:
+                case Key.NumPad5:
+                case Key.NumPad6:
+                case Key.NumPad7:
+                case Key.NumPad8:
+                case Key.NumPad9:
+                case Key.D0:
+                case Key.D1:
+                case Key.D2:
+                case Key.D3:
+                case Key.D4:
+                case Key.D5:
+                case Key.D6:
+                case Key.D7:
+                case Key.D8:
+                case Key.D9:
+                    break;
+                default:
+                    e.Handled = true;
+                    break;
+
+                    ;
+            }
+        }
+
+        private void UdgifterSum_KeyDown(object sender, KeyEventArgs e)
+        {
+           
+            switch (e.Key)
+            {
+                case Key.NumPad0:
+                case Key.NumPad1:
+                case Key.NumPad2:
+                case Key.NumPad3:
+                case Key.NumPad4:
+                case Key.NumPad5:
+                case Key.NumPad6:
+                case Key.NumPad7:
+                case Key.NumPad8:
+                case Key.NumPad9:
+                case Key.D0:
+                case Key.D1:
+                case Key.D2:
+                case Key.D3:
+                case Key.D4:
+                case Key.D5:
+                case Key.D6:
+                case Key.D7: 
+                case Key.D8:
+                case Key.D9:
+                    break;
+                default:
+                    e.Handled = true;
+                    break;
+
+                    ;
+            }
+
+        }
+
+        
+
+        
     }
 }

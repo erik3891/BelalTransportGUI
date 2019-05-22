@@ -34,7 +34,11 @@ namespace BelalTransportGUI
         }
            private void Button_Click_1(object sender, RoutedEventArgs e)
         {
-            if (gemt != nummer1 || gemt != nummer2)
+            Resultat resultat = new Resultat();
+            resultat.Show(); this.Close();
+     
+            resultat.udgifterSum.Text = den.Text.ToString();
+           /* if (gemt != nummer1 || gemt != nummer2)
             {
                 Console.WriteLine("Fail");
             }
@@ -53,7 +57,7 @@ namespace BelalTransportGUI
           
 
             gemt.Text = udgiftsliste.ToString();
-               
+               */
         }
 
         
@@ -128,7 +132,16 @@ namespace BelalTransportGUI
             }
         }
 
-        
+        private void Tilbage_Click(object sender, RoutedEventArgs e)
+        {
+            MainWindow mainWindow = new MainWindow();
+            mainWindow.Show();
+            this.Hide();
+        }
+
+
+
+
 
 
 
