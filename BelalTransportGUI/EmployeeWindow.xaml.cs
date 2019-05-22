@@ -23,7 +23,14 @@ namespace BelalTransportGUI
         {
             InitializeComponent();
             ConnectionDB connectiondb = new ConnectionDB();
-            connectiondb.GetAllEmployees();
+            //foreach (string item in connectiondb.GetEmployees())
+            //{
+            //    ListBoxItem itm = new ListBoxItem();
+            //    itm.Content = item;
+
+            //    employeelist.Items.Add(itm);
+            //}
+            //employeelist.Items.Add(new ListBoxItem { Content = connectiondb.GetEmployees()});
         }
         private void ListBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {

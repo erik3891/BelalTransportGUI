@@ -10,17 +10,17 @@ namespace BelalTransportGUI
 {
     public class ConnectionDB
     {
-        private static List<Employee> employees = new List<Employee>();
+        private List<Employee> employees = new List<Employee>();
         public void AddEmployee(Employee employee)
         {
             employees.Add(employee);
 
         }
-        public static Employee GetEmployee(string cpr)
+        public Employee GetEmployeesname(string employeedata)
         {
             for (int i = 0; i < employees.Count; i++)
             {
-                if (employees[i].CPR == cpr)
+                if (employees[i].EmployeeData == employeedata)
                 {
                     return employees[i];
                 }
@@ -55,7 +55,8 @@ namespace BelalTransportGUI
                                 string EmployeeFirstname = reader["Firstname"].ToString();
                                 string EmployeeLastName = reader["Lastname"].ToString();
 
-                                Employee employee = new Employee(CPR, EmployeeFirstname, EmployeeLastName);
+                                string EmployeeData = EmployeeFirstname + EmployeeLastName;
+                                Employee employee = new Employee(EmployeeData);
 
                                 AddEmployee(employee);
                             }

@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.28307.572
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BelalTransportGUI", "BelalTransportGUI\BelalTransportGUI.csproj", "{5CD6EF3A-63C0-41F2-AB12-23A221082FF2}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Unittest", "Unittest\Unittest.csproj", "{00C12FF0-4F8D-4AD3-8C9B-BF2B2E92DB9D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{5CD6EF3A-63C0-41F2-AB12-23A221082FF2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5CD6EF3A-63C0-41F2-AB12-23A221082FF2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5CD6EF3A-63C0-41F2-AB12-23A221082FF2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{00C12FF0-4F8D-4AD3-8C9B-BF2B2E92DB9D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{00C12FF0-4F8D-4AD3-8C9B-BF2B2E92DB9D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{00C12FF0-4F8D-4AD3-8C9B-BF2B2E92DB9D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{00C12FF0-4F8D-4AD3-8C9B-BF2B2E92DB9D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
