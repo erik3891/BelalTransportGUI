@@ -16,7 +16,9 @@ namespace BelalTransportGUI
             employees.Add(employee);
 
         }
-        public Employee GetEmployeesname(string employeedata)
+
+
+        public Employee GetEmployeeName(string employeedata)
         {
             for (int i = 0; i < employees.Count; i++)
             {

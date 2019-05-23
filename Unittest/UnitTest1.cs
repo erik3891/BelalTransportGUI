@@ -24,9 +24,9 @@ namespace Unittest
         [TestMethod]
         public void TestMethod1()
         {
-            Assert.AreEqual("Erik Hansen", connection.GetEmployeesname(e1.EmployeeData).EmployeeData);
-            Assert.AreEqual("Phillip Bonné", connection.GetEmployeesname(e2.EmployeeData).EmployeeData);
-            Assert.AreEqual("Ahmad Youssef", connection.GetEmployeesname(e3.EmployeeData).EmployeeData);
+            Assert.AreEqual("Erik Hansen", connection.GetEmployeeName(e1.EmployeeData).EmployeeData);
+            Assert.AreEqual("Phillip Bonné", connection.GetEmployeeName(e2.EmployeeData).EmployeeData);
+            Assert.AreEqual("Ahmad Youssef", connection.GetEmployeeName(e3.EmployeeData).EmployeeData);
         }
     }
 }

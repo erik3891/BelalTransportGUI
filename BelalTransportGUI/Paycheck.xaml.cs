@@ -17,11 +17,12 @@ namespace BelalTransportGUI
     /// <summary>
     /// Interaction logic for Lønseddel.xaml
     /// </summary>
-    public partial class Lønseddel : Window
+    public partial class Paycheck : Window
     {
-        public Lønseddel()
+        public Paycheck(string employee)
         {
             InitializeComponent();
+            employeebox.Text = employee;
         }
 
         private void TextBox_TextChanged(object sender, TextChangedEventArgs e)

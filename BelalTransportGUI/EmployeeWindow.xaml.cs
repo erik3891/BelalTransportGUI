@@ -22,19 +22,28 @@ namespace BelalTransportGUI
         public EmployeeWindow()
         {
             InitializeComponent();
-            ConnectionDB connectiondb = new ConnectionDB();
-            //foreach (string item in connectiondb.GetEmployees())
-            //{
-            //    ListBoxItem itm = new ListBoxItem();
-            //    itm.Content = item;
 
-            //    employeelist.Items.Add(itm);
-            //}
-            //employeelist.Items.Add(new ListBoxItem { Content = connectiondb.GetEmployees()});
+            //ListBoxItem item = new ListBoxItem();
+            //string employeedata ="";
+            //item.Content = connectiondb.GetAllEmployees();
+
+            //employeelist.Items.Add(item);
         }
-        private void ListBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
-        {
 
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            if (employeelist.SelectedItem != null)
+            {
+                var employee = (employeelist.SelectedItem as ListBoxItem).Content;
+                Paycheck paycheck = new Paycheck(employee.ToString());
+                paycheck.Show();
+                this.Close();
+
+            }
+            else
+            {
+                MessageBox.Show("Vælg medarbejder");
+            }
         }
     }
 }
