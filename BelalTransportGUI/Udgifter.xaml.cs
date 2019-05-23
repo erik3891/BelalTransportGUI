@@ -34,10 +34,12 @@ namespace BelalTransportGUI
         }
            private void Button_Click_1(object sender, RoutedEventArgs e)
         {
-            Resultat resultat = new Resultat();
-            resultat.Show(); this.Close();
+            Controller GetUdgifter = new Controller();
+            GetUdgifter.GetUdgifter();
+//Resultat resultat = new Resultat();
+          //  resultat.Show(); this.Close();
      
-            resultat.udgifterSum.Text = den.Text.ToString();
+          //  resultat.udgifterSum.Text = Udgifter.den.Text.ToString();
            /* if (gemt != nummer1 || gemt != nummer2)
             {
                 Console.WriteLine("Fail");
