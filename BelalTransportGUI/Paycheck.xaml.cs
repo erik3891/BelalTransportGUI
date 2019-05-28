@@ -23,6 +23,18 @@ namespace BelalTransportGUI
         {
             InitializeComponent();
             employeebox.Text = employee;
+            if (employeebox.Text == "Belal Aldib")
+            {
+                deductionlabel.Content = "40000";
+            }
+            else if (employeebox.Text == "Charlotte Hansen")
+            {
+                deductionlabel.Content = "40000";
+            }
+            else
+            {
+                deductionlabel.Content = "401337";
+            }
         }
 
         private void TextBox_TextChanged(object sender, TextChangedEventArgs e)

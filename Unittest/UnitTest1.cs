@@ -8,12 +8,12 @@ namespace Unittest
     public class UnitTest1
     {
         Employee e1, e2, e3;
-        ConnectionDB connection;
+        ConnectionEmployee connection;
 
         [TestInitialize]
         public void Init()
         {
-            connection = new ConnectionDB();
+            connection = new ConnectionEmployee();
             e1 = new Employee("Erik Hansen");
             e2 = new Employee("Phillip Bonné");
             e3 = new Employee("Ahmad Youssef");
