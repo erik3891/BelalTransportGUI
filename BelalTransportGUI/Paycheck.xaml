@@ -5,16 +5,16 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:BelalTransportGUI"
         mc:Ignorable="d"
-        Title="Lønseddel" Height="600" Width="800">
+        Title="Lønseddel" Height="450" Width="800">
     <Grid Margin="0,0,0,-41">
         <Label Content="Normaltid" HorizontalAlignment="Left" Margin="103,108,0,0" VerticalAlignment="Top"/>
         <Label Content="Overarbejde" HorizontalAlignment="Left" Margin="103,142,0,0" VerticalAlignment="Top"/>
-        <TextBox Name="Norpaytime" HorizontalAlignment="Left" Height="23" Margin="190,108,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+        <TextBox Name="Norpaytime" HorizontalAlignment="Left" Height="23" Margin="190,108,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
         <TextBox Name="Overpaytime" HorizontalAlignment="Left" Height="23" Margin="190,142,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" RenderTransformOrigin="0.808,0.652"/>
         <Label Content="Timeløn" HorizontalAlignment="Left" Margin="380,108,0,0" VerticalAlignment="Top"/>
         <Label Content="Timeløn" HorizontalAlignment="Left" Margin="380,142,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.079,0.423"/>
-        <TextBox Name="Norpay" HorizontalAlignment="Left" Height="23" Margin="443,108,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
-        <TextBox Name="Overpay" HorizontalAlignment="Left" Height="23" Margin="442,142,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+        <TextBox Name="Norpay" HorizontalAlignment="Left" Height="23" Margin="443,108,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox Name="Overpay" HorizontalAlignment="Left" Height="23" Margin="442,142,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
         <Label Content="Løn Før Skat" HorizontalAlignment="Left" Margin="103,201,0,0" VerticalAlignment="Top"/>
         <Label Name="Paylabel" Content="Label" HorizontalAlignment="Left" Margin="229,201,0,0" VerticalAlignment="Top"/>
         <Label Content="ATP" HorizontalAlignment="Left" Margin="124,251,0,0" VerticalAlignment="Top"/>
@@ -25,8 +25,8 @@
         <Label Name="deductionlabel" Content="Label" HorizontalAlignment="Left" Margin="225,325,0,0" VerticalAlignment="Top"/>
         <TextBox Name="employeebox" HorizontalAlignment="Left" Height="23" Margin="103,54,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
         <Button Name="Paycalc" Content="Udregn Løn" HorizontalAlignment="Left" Margin="209,177,0,0" VerticalAlignment="Top" Width="75" Click="Paycalc_Click"/>
-        <Button x:Name="Savepay" Content="Gem lønseddel" HorizontalAlignment="Left" Margin="206,373,0,0" VerticalAlignment="Top" Width="100"/>
-        <Button Name="BacktoEmployeeWindow" Content="Tilbage" HorizontalAlignment="Left" Margin="100,529,0,0" VerticalAlignment="Top" Width="75" Click="BacktoEmployeeWindow_Click"/>
+        <Button x:Name="Savepay" Content="Gem lønseddel" HorizontalAlignment="Left" Margin="206,375,0,0" VerticalAlignment="Top" Width="100"/>
+        <Button Name="BacktoEmployeeWindow" Content="Tilbage" HorizontalAlignment="Left" Margin="100,375,0,0" VerticalAlignment="Top" Width="75" Click="BacktoEmployeeWindow_Click"/>
 
     </Grid>
 </Window>

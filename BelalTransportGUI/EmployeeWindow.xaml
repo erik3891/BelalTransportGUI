@@ -17,6 +17,7 @@
         <ListBox HorizontalAlignment="Left" Height="146" Margin="225,60,0,0" VerticalAlignment="Top" Width="165" RenderTransformOrigin="0.667,0.486"/>
         <Button Content="Rediger" HorizontalAlignment="Left" Margin="227,216,0,0" VerticalAlignment="Top" Width="75"/>
         <Button Content="Ny" HorizontalAlignment="Left" Margin="317,216,0,0" VerticalAlignment="Top" Width="75" RenderTransformOrigin="0.013,0.05" Click="Button_Click"/>
+        <Button Content="Tilbage" HorizontalAlignment="Left" Margin="100,375,0,0" VerticalAlignment="Top" Width="74" Click="Button_Click_1"/>
 
     </Grid>
 </Window>
