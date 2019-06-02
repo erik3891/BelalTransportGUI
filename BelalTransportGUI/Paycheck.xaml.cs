@@ -19,6 +19,7 @@ namespace BelalTransportGUI
     /// </summary>
     public partial class Paycheck : Window
     {
+
         public Paycheck(string employee)
         {
             InitializeComponent();
@@ -26,14 +27,20 @@ namespace BelalTransportGUI
             if (employeebox.Text == "Belal Aldib")
             {
                 deductionlabel.Content = "40000";
+                IncomeTaxlabel.Content = 0.38;
+                //int CPR = 241285-8585;
             }
             else if (employeebox.Text == "Charlotte Hansen")
             {
                 deductionlabel.Content = "40000";
+                IncomeTaxlabel.Content = 0.38;
+                //int CPR =  1;
             }
             else
             {
                 deductionlabel.Content = "401337";
+                IncomeTaxlabel.Content = 0.137;
+                //int CPR = 1337;
             }
         }
 
@@ -44,13 +51,32 @@ namespace BelalTransportGUI
             double number3 = Int32.Parse(Overpaytime.Text);
             double number4 = Int32.Parse(Overpay.Text);
             double.TryParse(deductionlabel.Content.ToString(),out double Deduction);
-
+            double.TryParse(IncomeTaxlabel.Content.ToString(), out double IncomeTax);
+            if (number1 + number3 >= 117)
+            {
+                ATPlabel.Content = 94.65;
+            }
+            else if (number1 + number3 >= 78)
+            {
+                ATPlabel.Content = 63.10;
+            }
+            else if (number1 + number3 >= 39)
+            {
+                ATPlabel.Content = 31.55;
+            }
+            else
+            {
+                ATPlabel.Content = 0;
+            }
             double Pay = (number1 * number2) + (number3 * number4);
             Paylabel.Content = Pay;
+
             double ATP;
             double.TryParse(ATPlabel.Content.ToString(), out ATP);
-            double AM = ((Pay - ATP)-(Deduction / 12))* 0.08;
+            double AM = ((Pay - ATP)* 0.08);
             AMlabal.Content = AM.ToString("#.##");
+            double NetPay = (((Pay - Deduction/12) - (ATP + AM)) * (1 - IncomeTax))+Deduction/12;
+            NetPaylabel.Content = NetPay.ToString("#.##");
         }
 
         private void BacktoEmployeeWindow_Click(object sender, RoutedEventArgs e)
