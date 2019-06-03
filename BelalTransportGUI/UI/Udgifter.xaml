@@ -8,11 +8,10 @@
         Title="Udgifter" Height="450" Width="800">
     <Grid>
         <Button Content="Beregn  udgifter" HorizontalAlignment="Left" Margin="316,264,0,0" VerticalAlignment="Top" Width="93" RenderTransformOrigin="-0.107,-1.5" Click="Button_Click"/>
-        <TextBox x:Name="nummer1" HorizontalAlignment="Left" Height="23" Margin="86,63,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" KeyDown="Nummer1_KeyDown" Text="Indtast udgifter"   />
-        <TextBox x:Name="den" HorizontalAlignment="Left" Height="23" Margin="307,316,0,0" TextWrapping="Wrap" Text="Ialt" VerticalAlignment="Top" Width="120" IsReadOnly="True"/>
-        <TextBox x:Name="nummer2" HorizontalAlignment="Left" Height="23" Margin="313,67,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" KeyDown="Nummer2_KeyDown" />
+        <TextBox x:Name="nummer1" HorizontalAlignment="Left" Height="23" Margin="138,68,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" KeyDown="Nummer1_KeyDown" Text="Indtast udgifter"   />
+        <TextBox x:Name="UdgiftsSum" HorizontalAlignment="Left" Height="23" Margin="307,316,0,0" TextWrapping="Wrap" Text="Ialt" VerticalAlignment="Top" Width="120" IsReadOnly="True"/>
+        <TextBox x:Name="nummer2" HorizontalAlignment="Left" Height="23" Margin="140,133,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" KeyDown="Nummer2_KeyDown" />
         <Button Content="Gem" HorizontalAlignment="Left" Margin="438,317,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click_1"/>
-        <TextBox x:Name="gemt" HorizontalAlignment="Left" Height="23" Margin="542,318,0,0" TextWrapping="Wrap" Text="gemt" VerticalAlignment="Top" Width="120"/>
         <Button x:Name="Tilbage" Content="Tilbage" HorizontalAlignment="Left" Margin="15,14,0,0" VerticalAlignment="Top" Width="75" Click="Tilbage_Click" />
 
     </Grid>
