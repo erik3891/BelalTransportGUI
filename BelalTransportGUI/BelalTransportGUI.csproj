@@ -55,28 +55,28 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="ConnectionEmployee.cs" />
-    <Compile Include="Controller.cs" />
-    <Compile Include="Employee.cs" />
-    <Compile Include="EmployeePaycheck.cs" />
-    <Compile Include="Indtægter.xaml.cs">
+    <Compile Include="Domain\ConnectionEmployee.cs" />
+    <Compile Include="Application\Controller.cs" />
+    <Compile Include="Domain\Employee.cs" />
+    <Compile Include="Domain\EmployeePaycheck.cs" />
+    <Compile Include="UI\Indtægter.xaml.cs">
       <DependentUpon>Indtægter.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Resultat.xaml.cs">
+    <Compile Include="UI\Resultat.xaml.cs">
       <DependentUpon>Resultat.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Udgifter.xaml.cs">
+    <Compile Include="UI\Udgifter.xaml.cs">
       <DependentUpon>Udgifter.xaml</DependentUpon>
     </Compile>
-    <Page Include="Indtægter.xaml">
+    <Page Include="UI\Indtægter.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Paycheck.xaml">
+    <Page Include="UI\Paycheck.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="MainWindow.xaml">
+    <Page Include="UI\MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
@@ -84,28 +84,28 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Paycheck.xaml.cs">
+    <Compile Include="UI\Paycheck.xaml.cs">
       <DependentUpon>Paycheck.xaml</DependentUpon>
     </Compile>
-    <Compile Include="MainWindow.xaml.cs">
+    <Compile Include="UI\MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Page Include="EmployeeWindow.xaml">
+    <Page Include="UI\EmployeeWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Resultat.xaml">
+    <Page Include="UI\Resultat.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Udgifter.xaml">
+    <Page Include="UI\Udgifter.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="EmployeeWindow.xaml.cs">
+    <Compile Include="UI\EmployeeWindow.xaml.cs">
       <DependentUpon>EmployeeWindow.xaml</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs">
