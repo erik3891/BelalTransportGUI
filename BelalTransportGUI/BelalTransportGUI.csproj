@@ -55,10 +55,10 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="Domain\ConnectionEmployee.cs" />
-    <Compile Include="Application\Controller.cs" />
-    <Compile Include="Domain\Employee.cs" />
-    <Compile Include="Domain\EmployeePaycheck.cs" />
+    <Compile Include="ConnectionEmployee.cs" />
+    <Compile Include="Controller.cs" />
+    <Compile Include="Employee.cs" />
+    <Compile Include="EmployeePaycheck.cs" />
     <Compile Include="UI\Indtægter.xaml.cs">
       <DependentUpon>Indtægter.xaml</DependentUpon>
     </Compile>
@@ -133,6 +133,9 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Application\" />
+    <Folder Include="Domain\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
