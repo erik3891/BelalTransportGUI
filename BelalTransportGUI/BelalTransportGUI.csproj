@@ -59,24 +59,24 @@
     <Compile Include="Controller.cs" />
     <Compile Include="Employee.cs" />
     <Compile Include="EmployeePaycheck.cs" />
-    <Compile Include="UI\Indtægter.xaml.cs">
+    <Compile Include="Indtægter.xaml.cs">
       <DependentUpon>Indtægter.xaml</DependentUpon>
     </Compile>
-    <Compile Include="UI\Resultat.xaml.cs">
+    <Compile Include="Resultat.xaml.cs">
       <DependentUpon>Resultat.xaml</DependentUpon>
     </Compile>
-    <Compile Include="UI\Udgifter.xaml.cs">
+    <Compile Include="Udgifter.xaml.cs">
       <DependentUpon>Udgifter.xaml</DependentUpon>
     </Compile>
-    <Page Include="UI\Indtægter.xaml">
+    <Page Include="Indtægter.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="UI\Paycheck.xaml">
+    <Page Include="Paycheck.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="UI\MainWindow.xaml">
+    <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
@@ -84,28 +84,28 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="UI\Paycheck.xaml.cs">
+    <Compile Include="Paycheck.xaml.cs">
       <DependentUpon>Paycheck.xaml</DependentUpon>
     </Compile>
-    <Compile Include="UI\MainWindow.xaml.cs">
+    <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Page Include="UI\EmployeeWindow.xaml">
+    <Page Include="EmployeeWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="UI\Resultat.xaml">
+    <Page Include="Resultat.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="UI\Udgifter.xaml">
+    <Page Include="Udgifter.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="UI\EmployeeWindow.xaml.cs">
+    <Compile Include="EmployeeWindow.xaml.cs">
       <DependentUpon>EmployeeWindow.xaml</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs">
@@ -132,10 +132,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Application\" />
-    <Folder Include="Domain\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
