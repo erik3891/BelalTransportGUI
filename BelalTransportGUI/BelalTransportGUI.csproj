@@ -59,16 +59,16 @@
     <Compile Include="Application\Controller.cs" />
     <Compile Include="Domain\Employee.cs" />
     <Compile Include="Domain\EmployeePaycheck.cs" />
-    <Compile Include="UI\Indtægter.xaml.cs">
-      <DependentUpon>Indtægter.xaml</DependentUpon>
+    <Compile Include="UI\Income.xaml.cs">
+      <DependentUpon>Income.xaml</DependentUpon>
     </Compile>
-    <Compile Include="UI\Resultat.xaml.cs">
-      <DependentUpon>Resultat.xaml</DependentUpon>
+    <Compile Include="UI\Balance.xaml.cs">
+      <DependentUpon>Balance.xaml</DependentUpon>
     </Compile>
-    <Compile Include="UI\Udgifter.xaml.cs">
-      <DependentUpon>Udgifter.xaml</DependentUpon>
+    <Compile Include="UI\Cost.xaml.cs">
+      <DependentUpon>Cost.xaml</DependentUpon>
     </Compile>
-    <Page Include="UI\Indtægter.xaml">
+    <Page Include="UI\Income.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -95,11 +95,11 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="UI\Resultat.xaml">
+    <Page Include="UI\Balance.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="UI\Udgifter.xaml">
+    <Page Include="UI\Cost.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

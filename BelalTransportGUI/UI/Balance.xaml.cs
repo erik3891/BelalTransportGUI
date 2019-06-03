@@ -17,9 +17,9 @@ namespace BelalTransportGUI
     /// <summary>
     /// Interaction logic for Resultat.xaml
     /// </summary>
-    public partial class Resultat : Window
+    public partial class Balance : Window
     {
-        public Resultat()
+        public Balance()
         {
             InitializeComponent();
         }
@@ -28,7 +28,7 @@ namespace BelalTransportGUI
 
         private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
         {
-            var Udgiftdata = new Udgifter();
+            var CostData = new Cost();
           //  var data = Udgiftdata.UdgiftSum; // Ska ind og have fat i udgift summen
 
 
@@ -36,7 +36,7 @@ namespace BelalTransportGUI
 
         private void TextBox_TextChanged_1(object sender, TextChangedEventArgs e)
         {
-            var indtægtdata = new Indtægter();
+            var indtægtdata = new Income();
             //var data = indtægtdata.indtægtSum;
         }
 
