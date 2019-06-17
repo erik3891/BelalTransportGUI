@@ -8,11 +8,13 @@
         Title="Indtægter" Height="450" Width="800">
     <Grid x:Name="Tilbage">
         <Button Content="Beregn" HorizontalAlignment="Left" Margin="276,248,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click"/>
-        <TextBox x:Name="indtægter1" HorizontalAlignment="Left" Height="23" Margin="271,107,0,0" TextWrapping="Wrap" Text="Indsæt indtægter" VerticalAlignment="Top" Width="120" KeyDown="Indtægter1_KeyDown"/>
-        <TextBox x:Name="indtægter2" HorizontalAlignment="Left" Height="23" Margin="273,162,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" KeyDown="Indtægter2_KeyDown"/>
+        <TextBox x:Name="indtægter1" HorizontalAlignment="Left" Height="23" Margin="271,107,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="120" KeyDown="Indtægter1_KeyDown"/>
+        <TextBox x:Name="indtægter2" HorizontalAlignment="Left" Height="23" Margin="273,162,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" KeyDown="Indtægter2_KeyDown" Text="0" />
         <TextBox x:Name="Sum" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="ialt" VerticalAlignment="Top" Width="120" Margin="378,249,0,0" IsReadOnly="True"/>
         <Button x:Name="Tilbage1" Content="TIlbage" HorizontalAlignment="Left" Margin="32,27,0,0" VerticalAlignment="Top" Width="75" Click="Tilbage1_Click"   />
         <Button x:Name="Gem" Content="Gem" HorizontalAlignment="Left" Margin="523,251,0,0" VerticalAlignment="Top" Width="75" Click="Gem_Click"/>
+        <Label Content="Indsæt indtægter" HorizontalAlignment="Left" Margin="161,105,0,0" VerticalAlignment="Top"/>
+        <Label Content="Indsæt indtægter" HorizontalAlignment="Left" Margin="159,158,0,0" VerticalAlignment="Top"/>
 
     </Grid>
 </Window>

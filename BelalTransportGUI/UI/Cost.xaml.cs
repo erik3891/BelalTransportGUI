@@ -26,10 +26,17 @@ namespace BelalTransportGUI
         
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            int summen = 0;// opretter vores udregning hvor den ska gemmes
-            summen = int.Parse(nummer1.Text) + int.Parse(nummer2.Text); // starter udregning med at pluse tekstbox med hinanden 
+            if (nummer1.Text == "" || nummer2.Text == "")
+            {
+                MessageBox.Show("Indtask indtægt");
+            }
+            else
+            {
+                int summen = 0;// opretter vores udregning hvor den ska gemmes
+                summen = int.Parse(nummer1.Text) + int.Parse(nummer2.Text); // starter udregning med at pluse tekstbox med hinanden 
 
-        UdgiftsSum.Text = summen.ToString();// henter "den" tekstbox og putter summen ind i det
+                UdgiftsSum.Text = summen.ToString();// henter "den" tekstbox og putter summen ind i det
+            }
 
         }
            private void Button_Click_1(object sender, RoutedEventArgs e)
