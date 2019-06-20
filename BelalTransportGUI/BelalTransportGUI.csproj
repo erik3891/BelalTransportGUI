@@ -55,10 +55,13 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Domain\Balance.cs" />
     <Compile Include="Domain\ConnectionEmployee.cs" />
     <Compile Include="Application\Controller.cs" />
+    <Compile Include="Domain\Cost.cs" />
     <Compile Include="Domain\Employee.cs" />
     <Compile Include="Domain\EmployeePaycheck.cs" />
+    <Compile Include="Domain\Income.cs" />
     <Compile Include="UI\Income.xaml.cs">
       <DependentUpon>Income.xaml</DependentUpon>
     </Compile>
