@@ -6,29 +6,12 @@ using System.Threading.Tasks;
 
 namespace BelalTransportGUI.Domain
 {
-    public class GetSum
+    public class Cost
     {
-        private List<int> costs = new List<int>();
-            
-        public void AddCost(int cost)
+        int Amount { get; set; }
+        public Cost(int amount)
         {
-            costs.Add(cost);
-        }
-
-        public static GetSum(string employeedata)
-        {
-            for (int i = 0; i < employees.Count; i++)
-            {
-                if (employees[i].EmployeeData == employeedata)
-                {
-                    return employees[i];
-                }
-            }
-            return null;
-        }
-        public static int Sum2 (int costs)
-        {
-            return costs.Sum(x => Convert.ToInt32(x)));
+            Amount = amount;
         }
     }
-}
+}  

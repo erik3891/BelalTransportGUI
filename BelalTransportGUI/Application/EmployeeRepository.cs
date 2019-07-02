@@ -8,15 +8,10 @@ using System.Data;
 
 namespace BelalTransportGUI
 {
-    public class ConnectionEmployee
+    public class EmployeeRepository
     {
         private List<Employee> employees = new List<Employee>();
-        private List<EmployeePaycheck> employeepaychecks = new List<EmployeePaycheck>();
 
-        public void AddEmployeePaycheck(EmployeePaycheck employeePaycheck)
-        {
-            employeepaychecks.Add(employeePaycheck);
-        }
         public void AddEmployee(Employee employee)
         {
             employees.Add(employee);
@@ -75,45 +70,6 @@ namespace BelalTransportGUI
                     catch (Exception e)
                     {
                        Console.WriteLine(e.Message);
-                    }
-                }
-            }
-        }
-        public void GetEmployeeeDeduction()
-        {
-            using (SqlConnection con = new SqlConnection(connectionString))
-            {
-                string query = "SELECT * Belal_tab_Worker";
-                using (SqlCommand command = new SqlCommand(query, con))
-                {
-                    try
-                    {
-                        con.Open();
-                        SqlDataReader reader = command.ExecuteReader();
-
-                        if (reader.HasRows)
-                        {
-                            while (reader.Read())
-                            {
-                                string CPR = reader["CPR"].ToString();
-                                string EmployeeFirstname = reader["Firstname"].ToString();
-                                string EmployeeLastName = reader["Lastname"].ToString();
-                                string Deduction = reader["Deduction"].ToString();
-
-                                
-                                EmployeePaycheck employeePaycheck = new EmployeePaycheck(CPR, EmployeeFirstname, EmployeeLastName, Deduction);
-                                AddEmployeePaycheck(employeePaycheck);
-
-                                
-
-                            }
-                        }
-
-                        con.Close();
-                    }
-                    catch (Exception e)
-                    {
-                        Console.WriteLine(e.Message);
                     }
                 }
             }

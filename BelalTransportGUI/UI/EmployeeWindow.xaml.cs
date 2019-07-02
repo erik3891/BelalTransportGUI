@@ -35,7 +35,7 @@ namespace BelalTransportGUI
             if (employeelist.SelectedItem != null)
             {
                 var employee = (employeelist.SelectedItem as ListBoxItem).Content;
-                Paycheck paycheck = new Paycheck(employee.ToString());
+                PaycheckWindow paycheck = new PaycheckWindow(employee.ToString());
                 paycheck.Show();
                 this.Close();
 

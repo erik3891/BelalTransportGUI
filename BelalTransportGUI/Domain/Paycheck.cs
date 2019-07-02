@@ -6,13 +6,13 @@ using System.Threading.Tasks;
 
 namespace BelalTransportGUI
 {
-    public class EmployeePaycheck
+    public class PayCheck
     {
         string Lastname { get; set; }
         string Firstname { get; set;}
         string CPR { get; set;}
         string Deduction { get; set; }
-        public EmployeePaycheck(string cpr, string firstname, string lastname,string deduction)
+        public PayCheck(string cpr, string firstname, string lastname,string deduction)
         {
             CPR = cpr;
             Firstname = firstname;

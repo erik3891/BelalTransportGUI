@@ -6,12 +6,12 @@ using System.Threading.Tasks;
 
 namespace BelalTransportGUI.Domain
 {
-    public class Income
+    class CostRepository
     {
-        int Amount { get; set; }
-        public Income(int amount)
+        public List<Cost> costs = new List<Cost>();
+        public void AddCost(Cost cost)
         {
-            Amount = amount;
+            costs.Add(cost);
         }
     }
 }

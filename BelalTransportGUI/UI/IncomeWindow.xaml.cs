@@ -17,9 +17,9 @@ namespace BelalTransportGUI
     /// <summary>
     /// Interaction logic for Indtægter.xaml
     /// </summary>
-    public partial class Income : Window
+    public partial class IncomeWindow : Window
     {
-        public Income()
+        public IncomeWindow()
         {
             InitializeComponent();
         }
@@ -82,7 +82,7 @@ namespace BelalTransportGUI
 
         private void Gem_Click(object sender, RoutedEventArgs e)
         {
-                Balance resultat = new Balance();
+                BalanceWindow resultat = new BalanceWindow();
                 resultat.Show(); this.Close();
                 //den.Text = summen1.Sum.ToString();
                 resultat.indtægtSum.Text = Sum.Text.ToString();

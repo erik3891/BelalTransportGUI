@@ -8,9 +8,10 @@ namespace BelalTransportGUI
 {
     class Controller
     {
+
         public void GetUdgifter()
         {
-        
+            
 
             
         }

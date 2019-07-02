@@ -55,27 +55,30 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Application\PayCheckRepository.cs" />
     <Compile Include="Domain\Balance.cs" />
-    <Compile Include="Domain\ConnectionEmployee.cs" />
+    <Compile Include="Application\EmployeeRepository.cs" />
     <Compile Include="Application\Controller.cs" />
     <Compile Include="Domain\Cost.cs" />
+    <Compile Include="Application\CostRepository.cs" />
     <Compile Include="Domain\Employee.cs" />
-    <Compile Include="Domain\EmployeePaycheck.cs" />
+    <Compile Include="Domain\Paycheck.cs" />
     <Compile Include="Domain\Income.cs" />
-    <Compile Include="UI\Income.xaml.cs">
-      <DependentUpon>Income.xaml</DependentUpon>
+    <Compile Include="Application\IncomeRepository.cs" />
+    <Compile Include="UI\IncomeWindow.xaml.cs">
+      <DependentUpon>IncomeWindow.xaml</DependentUpon>
     </Compile>
-    <Compile Include="UI\Balance.xaml.cs">
-      <DependentUpon>Balance.xaml</DependentUpon>
+    <Compile Include="UI\BalanceWindow.xaml.cs">
+      <DependentUpon>BalanceWindow.xaml</DependentUpon>
     </Compile>
-    <Compile Include="UI\Cost.xaml.cs">
-      <DependentUpon>Cost.xaml</DependentUpon>
+    <Compile Include="UI\CostWindow.xaml.cs">
+      <DependentUpon>CostWindow.xaml</DependentUpon>
     </Compile>
-    <Page Include="UI\Income.xaml">
+    <Page Include="UI\IncomeWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="UI\Paycheck.xaml">
+    <Page Include="UI\PaycheckWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -87,8 +90,8 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="UI\Paycheck.xaml.cs">
-      <DependentUpon>Paycheck.xaml</DependentUpon>
+    <Compile Include="UI\PaycheckWindow.xaml.cs">
+      <DependentUpon>PaycheckWindow.xaml</DependentUpon>
     </Compile>
     <Compile Include="UI\MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
@@ -98,11 +101,11 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="UI\Balance.xaml">
+    <Page Include="UI\BalanceWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="UI\Cost.xaml">
+    <Page Include="UI\CostWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

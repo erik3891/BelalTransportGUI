@@ -17,9 +17,9 @@ namespace BelalTransportGUI
     /// <summary>
     /// Interaction logic for Udgifter.xaml
     /// </summary>
-    public partial class Cost : Window
+    public partial class CostWindow : Window
     {
-        public Cost()
+        public CostWindow()
         {
             InitializeComponent();
         }
@@ -36,13 +36,14 @@ namespace BelalTransportGUI
                 summen = int.Parse(nummer1.Text) + int.Parse(nummer2.Text); // starter udregning med at pluse tekstbox med hinanden 
 
                 UdgiftsSum.Text = summen.ToString();// henter "den" tekstbox og putter summen ind i det
+
             }
 
         }
            private void Button_Click_1(object sender, RoutedEventArgs e)
         {
             
-            Balance resultat = new Balance();
+            BalanceWindow resultat = new BalanceWindow();
             resultat.Show(); this.Close();
      
            resultat.udgifterSum.Text =UdgiftsSum.Text.ToString();

@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace BelalTransportGUI.Domain
 {
-    class Balance
+    public class Balance
     {
+        
     }
 }

@@ -1,7 +1,8 @@
-﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
+﻿using System;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
 using BelalTransportGUI;
 
-namespace Unittest
+namespace UnitTestBelal
 {
     [TestClass]
     public class UnitTest1
@@ -26,6 +27,6 @@ namespace Unittest
             Assert.AreEqual("Erik Hansen", connection.GetEmployee(e1.EmployeeData).EmployeeData);
             Assert.AreEqual("Phillip Bonné", connection.GetEmployee(e2.EmployeeData).EmployeeData);
             Assert.AreEqual("Ahmad Youssef", connection.GetEmployee(e3.EmployeeData).EmployeeData);
-        }
+        }        
     }
 }

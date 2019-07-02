@@ -36,7 +36,7 @@ namespace BelalTransportGUI
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
 
-            Cost cost = new Cost();
+            CostWindow cost = new CostWindow();
             cost.Show();
             this.Close();
         }
@@ -45,14 +45,14 @@ namespace BelalTransportGUI
 
         private void Indtægter_Click(object sender, RoutedEventArgs e)
         {
-            Income income = new Income();
+            IncomeWindow income = new IncomeWindow();
             income.Show();
             this.Close();
         }
 
         private void Resultat_Click(object sender, RoutedEventArgs e)
         {
-            Balance balance = new Balance();
+            BalanceWindow balance = new BalanceWindow();
             balance.Show();
             this.Close();
         }
